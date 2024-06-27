@@ -11,8 +11,7 @@ This project focuses on implementing a Text Generation model using a Recurrent N
 5. Text Generation
 6. Results
 7. Future Work
-8. Dependencies
-9. How to Use
+8. Conclusion
 
 ## 1. Introduction:
 Text generation is a fascinating application of deep learning, and this project explores the use of an RNN with LSTM units for generating text. The model learns patterns and structures from the input text data and can then generate new sequences of text that resemble the training data.
@@ -24,7 +23,7 @@ The implemented model is a Character-level RNN with an embedding layer, LSTM lay
 The input text is preprocessed to identify unique characters, mapping them to indices, and creating input-target pairs for training. This preprocessing step is crucial for converting raw text into a format suitable for training deep learning models.
 
 ## 4. Training Phase:
-The model is trained using a specified sequence length, hidden size, and number of LSTM layers. The training loop involves mini-batch training, shuffling of data, and updating model parameters to minimize the cross-entropy loss. The training loss is monitored to assess model convergence.
+The model is trained using a specified sequence length, hidden size, and number of LSTM layers. The training loop updaties the model parameters to minimize the cross-entropy loss. The training loss is monitored to assess model convergence.
 
 ## 5. Text Generation:
 After training, the model is capable of generating text by providing an initial seed sequence. The generated text is a creative output based on the learned patterns and structures from the training data.
@@ -35,16 +34,5 @@ The trained model demonstrates the ability to generate coherent and contextually
 ## 7. Future Work:
 Future enhancements may involve experimenting with different hyperparameters, exploring more complex architectures, and incorporating attention mechanisms for improved context understanding in text generation.
 
-## 8. Dependencies:
-- Python 3.x
-- PyTorch
-- NumPy
-
-## 9. How to Use:
-1. Clone the repository.
-2. Install the required dependencies.
-3. Set hyperparameters (sequence length, hidden size, etc.) in the provided code.
-4. Run the code to train the RNN on the input text data.
-5. After training, use the model to generate text by providing an initial seed sequence.
-
-This project serves as an educational resource for understanding and implementing a Text Generation model using RNNs. It can be used for creative writing, storytelling, and generating text in various domains.
+## 8. Conclusion:
+This project implements a Text Generation model using RNNs. It can be used for creative writing, storytelling, and generating text in various domains one trained over the desired datasets in the same format
